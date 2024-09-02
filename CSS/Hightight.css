@@ -1,0 +1,747 @@
+@import url(./Reponsive/highlight_reponsive.css);
+
+* {
+    font-family: Helvetica, sans-serif, Arial, 'Times New Roman';
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Màu nền mờ */
+    backdrop-filter: blur(10px); /* Hiệu ứng blur */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Màu thanh cuộn */
+    border-radius: 10px; /* Bo góc */
+}
+
+.preloader {
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.2s linear;
+    width: 100%;
+    z-index: 9999;
+    opacity: 1;
+    background-color: #000000;
+    font-size: 1.2vw;
+}
+
+.preloader > img {
+    width: 50%;
+    margin-bottom: 2vh; /* Khoảng cách giữa GIF và thanh tiến độ */
+}
+
+.progress-container {
+    width: 80%; /* Chiều rộng của thanh tiến độ */
+    background-color: #333; /* Màu nền của thanh tiến độ */
+    height: 0.8vw; /* Chiều cao của thanh tiến độ */
+    border-radius: 1vh; /* Bo góc của thanh tiến độ */
+    position: relative;
+}
+
+
+.progress-bar {
+    background-color: white;
+    width: 0%;
+    height: 100%;
+    padding: 0.5vw;
+    border-radius: 1vw; /* Bo góc của thanh tiến độ */
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0); /* Màu chữ trong thanh tiến độ */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Highlight_Navigation{
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    padding-top: 25vh;
+    left: -100%; /* Ẩn ra khỏi màn hình bên trái */
+    transition: left 1.0s ease-in-out; /* Hiệu ứng mượt */
+    font-size: 1.2vw;
+}
+
+.Highlight_Navigation.active {
+    left: 0; /* Trượt vào màn hình từ trái sang */
+}
+
+.Highlight_container{
+    display: flex;
+    padding-bottom: 15vh;
+}
+
+.menu_left a[href="#"].active {
+    color: #efa200;
+}
+
+.Nav_content{
+    width: 40%;
+    margin-left: 2%;
+    padding-right: 16vw;
+}
+
+.Nav_content > div > a > p{
+    margin: 0;
+    font-size: 0.6em;
+}
+
+.Nav_content > div > a > p{
+    color: white;
+    margin-left: 0%;
+    transition: 0.3s ease-in-out;
+}
+
+.Nav_content > div > a > p:hover{
+    color: #efa200;
+    margin-left: 3%;
+}
+
+
+.Nav_content > h2{
+    color: #efa200;
+    font-size: 2em;
+    margin: 0;
+}
+
+.Nav_content > div{
+    padding-top: 5%;
+    font-size: 3em;
+}
+
+.Nav_clock{
+    text-align: right;
+}
+
+.Nav_clock > h2{
+    color: #efa200;
+    font-size: 2em;
+    margin: 0;
+}
+.Nav_clock > p{
+    font-size: 2em;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.Scrollup{
+    position: absolute;
+    margin-top: 1%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+
+.sec3{
+    position: relative;
+}
+
+.Scrollup > a:hover{
+    color: rgb(255, 123, 0) !important;
+    transition: 0.3s ease-in-out;
+}
+
+
+.Scrolldown{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+
+.Scrolldown > a{
+    color: white;
+}
+
+.Scrolldown > a:hover{
+    color: rgb(255, 123, 0);
+    transition: 0.3s ease-in-out;
+}
+
+.sec2 {
+    position: relative;
+}
+
+
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 1%;
+    color: white;
+    transition: top 0.3s;
+    font-size: 1.3vw;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    opacity: 1;
+}
+
+header.hidden {
+    opacity: 0;
+    display: none;
+}
+
+/* menu phần trái*/
+.menu_left {
+    position: relative;
+    width: 65%;
+}
+
+.menu_left>ul{
+    display: flex;
+    float: right;
+}
+
+.menu_left>ul>li{
+    margin-right: 1.3em;
+}
+
+
+
+.menu_left>ul>li>a {
+    font-size: 0.8em;
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    border: 1px solid #5e676a;
+    background-color: transparent;
+    overflow: hidden;
+    padding: 0.8em;
+    border-radius: 1.3em;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu_left>ul>li>a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff9800;
+    transition:  0.3s ease-in-out;
+    z-index: -1;
+}
+
+.menu_left>ul>li>a:hover::before{
+    margin-left: 0%;
+}
+
+
+/*Hiệu ứng cho menu trái*/
+/* logo menu */
+.Nav_Logo {
+    width: 30%;
+    font-size: 1.5em;
+
+}
+.Nav_Logo >p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.Main_Page{
+    position: relative;
+    top: 0;
+    display: block;
+    z-index: 100;
+}
+
+.Cinema {
+    position: fixed;
+    z-index: -100;
+}
+
+.Empty{
+    position: relative;
+    display: block;
+    height: 50vw;
+}
+
+.Video_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Video_container > video {
+    width: 100vw;
+    object-fit: cover;
+}
+
+.Cinema_content{
+    padding-top: 12vw;
+    color: white;
+
+}
+
+.Cinema_content > .Over_View{
+    display: flex;
+    font-size: 1.2vw;
+}
+
+.Cinema_content > .Over_View > div:nth-child(2){
+    width: 40%;
+    margin-right: 8%;
+    margin-left: 2%;
+}
+.Cinema_content > .Over_View > div:not(:nth-child(2)){
+    width: 18%;
+    margin-left: 2%;
+}
+
+.Main_Text{
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 4%;
+    padding-bottom: 6vw;
+    font-size: 0.9vw;
+}
+
+.Main_Text > .Header >h1{
+    font-size: 2.5em;
+}
+
+.Main_Text > .Header >h2{
+    font-size: 3em;
+}
+
+.Cinema_content > .Over_View{
+    padding-bottom: 3%;
+}
+
+.Cinema_content > .Over_View > div:nth-child(3) > ul > li > h2{
+    font-size: 1.4em;
+}
+.Cinema_content > .Over_View > div:nth-child(4) > ul > li > h2{
+    font-size: 1.4em;
+}
+
+.Cinema_content > .Over_View > div > ul > li{
+    margin-bottom: 5%;
+}
+
+.Quote{
+    font-size: 2em;
+    width: 40%;
+    text-align: right;
+}
+
+
+.Black_glass{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.Over_View > div:first-child > ul > li > i{
+    margin-right: 2%;
+}
+
+.Over_View > div:first-child > a > p{
+    text-align: center;
+    width: 40%;
+    background-color: #ffffff;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*--------------SEC 2 ----------------*/
+.sec2{
+    background-color: white;
+    display: flex;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-size: 1.2vw;
+}
+.sec2 > p{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 0 2%;
+    font-size: 1.3em;
+    width: 18%;
+}
+
+.sec2 h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin: 0;
+}
+
+.sec2 > .Introduction{
+    width: 60%;
+}
+
+.Welcome > ul{
+    list-style-type:decimal;
+    padding-left: 2%;
+}
+
+.Welcome > ul > li{
+    margin-bottom: 5%;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.Person:hover > div > p{
+    color: #ff9f0f;
+    transition: 0.3s ease-in-out;
+}
+
+.Highlight{
+    display: flex;
+}
+
+.Highlight > div{
+    width: 50%;
+}
+
+.Highlight > div:first-child{
+    margin-right: 20%;
+}
+
+.Introduction > hr{
+    margin-top: 10%;
+}
+
+
+/*---- Section 3 ----*/
+.sec3{
+    background-color: black;
+    font-size: 1.2vw;
+}
+
+.Menu_header{
+    padding-top: 5%;
+    display: flex;
+    margin-left: 2%;
+}
+
+.Menu_header > p:first-child{
+    width: 17%;
+    margin: 0;
+    color:#ff9f0f;
+    font-size: 1.5em;
+}
+
+.Menu_header > p:last-child{
+    margin: 0;
+    width: 35%;
+    color:#ffffff;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.Menu_List{
+    margin-top: 5%;
+}
+.Menu_List > .Book > .Book_header > a{
+    padding-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    font-size: 1.2em;
+}
+
+.Menu_List > .Book > .Book_header > a:hover{
+    background-color: rgba(145, 145, 145, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.Menu_List > .Book > .Book_header > a:hover > p:last-child{
+    color: orange;
+}
+
+.Menu_List > .Book > .Book_header > a > p > i{
+    color: white;
+}
+
+.Menu_List > .Book > .Book_header > a > p:not(:nth-child(5)){
+    width: 14%;
+    color: white;
+}
+.Menu_List > .Book > .Book_header > a > p:nth-child(2){
+    margin-left: 3%;
+    width: 30%;
+}
+.Menu_List > .Book > .Book_header > a > p:nth-child(3){
+    margin-right: 5%;
+    color: #6a6a6a;
+ }
+ .Menu_List > .Book > .Book_header > a > p:nth-child(4)
+ {
+    margin-right: 5%;
+ }
+.Menu_List > .Book > .Book_header > a > p:nth-child(5){
+   color: #6a6a6a;
+   width: 20%;
+}
+
+
+
+/*-------- SEC 3 ------------*/
+.sec3_header{
+    position: relative;
+    font-size: 1.2vw;
+}
+
+.sec3_img {
+    display: flex;
+    justify-content: center;
+}
+
+.sec3_img > img{
+    width: 100%;
+
+}
+
+.Header_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.Header_content > h2{
+    font-size: 2em;
+    color: #ff9f0f;
+}
+
+.Header_content > ul > li{
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 5%;
+    text-align: justify;
+}
+
+.Header_content > ul > li:last-child > p{
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.end{
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.end > p:first-child{
+    color: #ff9f0f;
+    font-size: 2em;
+}
+
+.end > p:nth-child(2){
+    margin: 0 auto;
+    font-size: 1.3em;
+    width: 50%;
+}
+
+.Person{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+}
+.Person > div{
+    width: 50%;
+    margin: 0 auto;
+}
+.Person > div > p{
+    color: #aaaaaa;
+    font-size: 1em;
+}
+.img > img{
+    width: 50%;
+}
+
+
+
+/*------------- Author Section ------------- */
+.Author_Container{
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+.Author_Container > div{
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+}
+.Author:hover{
+    color: orange;
+    transition: 0.2s ease-in-out;
+}
+.Author:hover > .Author_img > img{
+    transform: translateY(-5%);
+    border: 1px solid white;
+}
+
+.Author_img > img{
+    width: 100%;
+    height: 15em;
+    transition: 0.2s ease-in-out;
+}
+
+.Author_content{
+    display: flex;
+    font-size: 0.8em;
+
+}
+
+.Author_content > p:last-child{
+    margin-left: 20%;
+}
+
+/*footer*/
+footer {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+}
+
+.Footer_content{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.Conclusion{
+    display: flex;
+    justify-content: center;
+}
+.Conclusion_left{
+    color: black;
+    width: 60%;
+}
+.Conclusion_right{
+    width: 30%;
+}
+.Link > h3 {
+    color: rgb(0, 34, 255);
+    border-bottom: 2px solid rgb(0, 34, 255) ;
+    text-align: center;
+}
+
+
+.Conclusion_right > div{
+    margin-left: 10%;
+}
+.Conclusion_right > div > img{
+    width: 100%;
+}
+
+.Conclusion_right> ul > li{
+    margin-left: 10%;
+    font-size: 1.5em;
+}
+.Conclusion_right> ul{
+   margin-top: 0.1em;
+   display: flex;
+   justify-content: center;
+}
+
+
+.Superlink{
+    display: flex;
+    margin-bottom: 2em;
+}
+.Superlink > .Link{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.Superlink > .Link > h3{
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+.Superlink > .Link > ul > li{
+    padding: 0;
+    margin: 0 0 1.2em 0;
+}
+/*dòng cuối trang*/
+footer>a>p {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.Link >ul >li > a:hover{
+    color:#004cfe;
+    transition: 0.3s ease-in-out;
+}
+
+.Conclusion_right > ul > li > a > i:hover{
+    color:#004cfe;
+    transition: 0.3s ease-in-out;
+}

@@ -1,0 +1,42 @@
+@media only screen and (max-width: 600px) {
+
+
+    .book > div:first-child > p{
+        font-size: 2vw !important;
+    }
+    .book{
+        padding-top: 16% !important;
+    }
+    .book_container{
+        width: 97%;
+        display:block !important;
+        font-size: 2.5vw !important;
+    }
+    .Book_Left{
+        width: 97% !important;
+        position: relative !important;
+        margin-bottom: 10% !important;
+    }
+    
+    .book_info > table > tbody > tr{
+        line-height: 1.8em !important;   
+    }
+
+    .Book_Right{
+        width: 97% !important; 
+    }
+    .Book_Right > div{
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 3%;
+    }
+    .Buy_Book{
+        display: flex;
+    }
+    
+    .Book_description > ul > li{
+        line-height: 2em;
+    }
+}
+

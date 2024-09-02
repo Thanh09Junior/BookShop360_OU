@@ -1,0 +1,177 @@
+@import url(./Reponsive/index_reponsive.css);
+@import url(./Reponsive/taikhoan_reponsive.css);
+
+.Panel_header{
+    font-size: 1.2vw;
+    width: 92%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.Panel_header > ul{
+    display: flex;
+    align-items: center;
+}
+
+.Panel_header > ul > li{
+    border: 1px solid gray;
+    background-color: white;
+    font-size: 1.2em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.Panel_header > ul > li:hover{
+    background-color: rgb(0, 81, 255);
+    transition:  0.3s ease-in-out;
+}
+
+.Panel_header > ul > li:hover > a{
+    color:white;
+}
+
+
+
+/*----------------*/
+.Pannel_Details{
+    font-size: 1.3vw;
+    width: 89%;
+    margin-left: 5%;
+    margin-bottom: 12%;
+    background-color: white;
+}
+
+.Pannel_Details > .Main_info{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Pannel_Details > .Main_info > .Info_content{
+    margin-left: 8%;
+}
+
+.Main_info > .Img {
+    margin-right: 8%;
+}
+
+.Main_info > .Img > img{
+    width: 13em;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.Buy_History{
+    padding-top: 2%;
+    padding-bottom: 10%;
+   margin-left: 2%;
+   margin-right: 2%;
+}
+
+.Bought_items{
+    display: flex;
+    align-items: center;
+}
+
+.Bought_items > div > img{
+    width: 100px;
+}
+.Bought_items > div{
+    width: 15%;
+    margin-left: 5%;
+}
+.Bought_items > p:not(:first-child){
+    width: 20%;
+    margin-left: 3%;
+}
+
+
+
+
+/*------------------------*/
+.Account_Edit{
+    padding-top: 2%;
+    padding-bottom: 10%;
+   margin-left: 2%;
+   margin-right: 2%;
+   font-size: 1.3vw;
+}
+
+.editor{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.editor > .Info_left > input{
+    display: block;
+    width: 20em;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+
+.editor > .Info_Right > input{
+    display: block;
+    width: 20em;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+.Center{
+    margin-top: 3%;
+    text-align: center;
+}
+.Center > input{
+    display: block;
+    width: 20em;
+    margin-bottom: 1%;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+.Account_Edit > button{
+    font-size: 1.1em;
+    margin-left: 46%;
+    margin-top: 2%;
+}
+
+
+/*----------------------*/
+
+.Settings{
+    padding-top: 2%;
+    padding-bottom: 10%;
+    margin-left: 3%;
+}
+
+.Settings_content{
+    display: flex;
+
+}
+
+
+.Settings_content > a{
+    width: 40%;
+}
+
+.Settings_content > a > p{
+    padding: 1em;
+    border: 2px solid red;
+    width: 8em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.Settings_content > a > p:hover{
+    background-color: #c92127;
+    color: white;
+    transition: 0.3s ease-in-out;
+}

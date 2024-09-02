@@ -1,0 +1,350 @@
+@import url(./Reponsive/index_reponsive.css);
+@import url(./Reponsive/gioithieu_reponsive.css);
+
+.Cinema {
+    position: relative;
+    background-image: url(../Assest/GioiThieu/background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    overflow: hidden;
+    font-size: 1.2vw;
+}
+
+
+.Cinema > .Cinema_Container{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 4em;
+}
+.Cinema > .Cinema_Container >.Social_icon{
+    display: flex;
+}
+.Social_icon > a > i{
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+.Cinema_Container > .Content{
+    width: 41%;
+    text-align: left;
+}
+
+.Cinema_Container > .Clock{
+    width: 51%;
+    text-align: right;
+    color: #ffffff;
+    font-weight: bold;
+}
+.Cinema_Container > .Clock >p{
+    font-size: 1.5em;
+}
+.Cinema >a>p{
+    max-width: 10em;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border: 2px solid rgb(0, 255, 179);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.Cinema >a>p:hover{
+    background-color: #5270ff;
+    transition: 0.3s ease-in-out;
+}
+
+.Social_icon > a>i:hover{
+    color: rgb(0, 255, 179) !important;
+    transition: 0.3s ease-in-out;
+}
+
+/*---------- Bookshop_Introduction -----------*/
+.Bookshop_Introduction{
+    padding-top: 6vh;
+    background-color: #f5ded1;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.Introduction_container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.2em;
+    font-size: 1.2vw;
+}
+
+.Introduction_container > .Bookshop_img{
+    width: 30%;
+}
+
+.Introduction_container > .Bookshop_img > img{
+    margin-top: 25%;
+    margin-left: 15%;
+    border: 2px solid rgb(186, 186, 186);
+    border-radius: 50%;
+    width: 70%;
+}
+
+.Introduction_container > .Content{
+    width: 30%;
+}
+.Introduction_container > .Content >.Subcontent:hover{
+    border: 1px solid rgb(0, 68, 255);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Tạo bóng khi hover */
+    transition: 0.1s ease-in-out;
+}
+.Introduction_container > .Content >.Subcontent{
+    margin-bottom: 30%;
+    padding: 0.8em;
+    font-size: 1em;
+}
+.Introduction_container > .Bookshop_img > img:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Tạo bóng khi hover */
+    border: 1px solid rgb(0, 68, 255);
+    transition: 0.2s ease-in-out;
+}
+
+.Content >.Subcontent > hr{
+    border: 1px solid rgb(0, 68, 255);
+}
+.Introduction_container > .Content {
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+/*---------- Bookshop_Services-----------*/
+.Bookshop_Services{
+    font-size: 1.2vw;
+}
+
+.Service_container{
+    background-color: white;
+    padding-top: 8em;
+    padding-bottom: 10em;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.Service_container > .Service{
+    width: 20%;
+    margin-right: 2%;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.Service_container > .Service:hover{
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Tạo bóng khi hover */  border: 2px solid rgb(0, 60, 255);
+    transition: 0.2s ease-in-out;
+}
+.Service_container > .Service > i{
+    font-size: 1.5em;
+    color: rgb(0, 60, 255);
+}
+.Service_container > .Service > h3{
+    color: rgb(0, 60, 255);
+}
+.Service_container > .Service > div{
+    min-height: 10em;
+}
+.Service_container > .Service > div > p{
+    color: black;
+    text-align: justify;
+}
+
+.Tutorial{
+    color: rgb(0, 60, 255);
+    font-weight: bold;
+}
+
+.Tutorial:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*----------------- Owner Container *------------------*/
+.Owner_container{
+    display: flex;
+    justify-content: center;
+    background-image: url(../Assest/GioiThieu/Perrsonal.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    font-size: 1.2vw;
+}
+.Owner_container > .Person > h3{
+    color:#7088ff;
+}
+.Owner_container > .Person{
+    text-align: center;
+    width: 42%;
+    margin-right: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 1.2em;
+    color: white;
+}
+.Owner_container > .Person:hover{
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+}
+.Owner_container > .Person:hover > h3{
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.Owner_container > .Person >.Person_img{
+    margin: 0 auto;
+    width: 40%;
+}
+.Owner_container > .Person >.Person_img>img{
+    width: 70%;
+    border-radius: 10%;
+}
+
+.Person > a> h4{
+    color:#7088ff;
+}
+
+.Person > a> h4:hover{
+    color:white;
+}
+
+
+/*--------- Help section -------------*/
+.Get_Help{
+    background-color: rgb(255, 239, 239);
+    padding-top: 8vh;
+    padding-bottom: 12vh;
+    border: 1px solid black;
+    font-size: 1.3vw;
+}
+.Subhelp:hover{
+    box-shadow: 10px 10px 20px rgba(25, 0, 255, 0.5);
+    transition: 0.2s ease-in-out;
+}
+.Get_Help > h3{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+.Help_section{
+    padding-top: 3em;
+}
+.Help_content{
+    display: flex;
+    justify-content: center;
+}
+
+.Help_section > .Help_content > .Subhelp{
+    display: block;
+    line-height: 3em;
+    font-size: 1.3em;
+    background-image: linear-gradient(to left, rgba(246, 33, 0, 0.4) 99%, blue 1%);
+    padding: 1em;
+    width: 35%;
+    border-radius: 1em;
+    align-items: center;
+}
+
+.Help_section > .Help_content > .Form{
+    width: 53%;
+}
+
+.Subhelp > p{
+    padding: 0;
+    margin: 0 0 0 3%;
+}
+
+.Subhelp > p > a{
+    color: rgb(255, 255, 255);
+}
+
+.Subhelp > p > a:hover{
+    color:rgb(0, 60, 255);
+}
+
+
+.Form{
+    display: flex;
+    margin-left: 3%;
+    align-items: center;
+    background-image: url(../Assest/GioiThieu/form.webp);
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.Form:hover{
+    box-shadow: 10px 10px 20px rgba(25, 0, 255, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.Form > div{
+    width: 50%;
+}
+.Form> div:first-child {
+    text-align: center;
+    font-size: 1.2em;
+}
+.Forms{
+    border: 2px solid #5270ff;
+    border-radius: 0.8em;
+    background-color: white;
+    margin-right: 3%;
+    position: absolute;
+    right: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.Forms > form > label{
+    display: block;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.Forms > form{
+    margin-left: 18%;
+}
+.Forms > form > input{
+    display: block;
+    font-size: 1em;
+}
+
+.Forms > form > input:hover{
+    border-color: blue;
+    transition: 0.3s ease-in-out;
+}
+
+
+.Forms > form > textarea{
+    display: block;
+    margin-bottom: 5%;
+    border-radius: 0.5em;
+}
+
+.Forms > form > textarea:hover{
+    border-color: blue;
+    transition: 0.3s ease-in-out;
+}
+
+#Button{
+    border: 2px solid #5270ff;
+    background-color: transparent;
+    color: inherit;
+    padding: 5px;
+     cursor: pointer;
+     border-radius: 0.8em;
+}
+
+#Button:hover{
+    background-color: #5270ff;
+    color: white;
+    transition: 0.3s ease-in-out;
+}

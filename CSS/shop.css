@@ -1,0 +1,128 @@
+@import url(./Reponsive/index_reponsive.css);
+@import url(./Reponsive/shop_reponsive.css);
+
+
+.shop > div:first-child > p{
+    margin: 0 0 0 3%;
+    font-size: 1.3vw;
+}
+.shop{
+    padding-top: 8%;
+}
+
+img{
+    width: 100%;
+}
+.shop_container{
+    width: 94%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 1.1vw;
+}
+
+.Nav_Category{
+    background-color: white;
+    width: 30%;
+    margin-right: 3em;
+    height: 1%;
+    border: 1px solid gray;
+    border-radius: 1em;
+}
+.Nav_Category > h2{
+    margin-left: 3%;
+    color: #c92127;
+}
+input[type="checkbox"] {
+    width: 1.5vw; /* Kích thước chiều rộng */
+    height: 1.5vw;
+}
+
+.Nav_Category > ul > li > a > p:hover{
+    color: rgb(255, 68, 0);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+
+.Nav_Category > ul{
+    margin-left: 10%;
+    line-height: 1.5em;
+}
+.Sort{
+    padding-top: 2%;
+    padding-left: 3%;
+    display: flex;
+}
+.custom-select{
+    margin-left: 2%;
+}
+.Sort{
+    font-size: 1.1em;
+}
+.shop_container > .BookShelf{
+    background-color: white;
+    width: 75%;
+    border-radius: 1em;
+}
+.BookShelf_content > .Book{
+    width: 25%;
+    margin-bottom: 3%;
+}
+.Book_content{
+    width: 80%;
+    padding: 1em;
+}
+.Book_content:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+}
+.BookShelf_content > .Book > .Book_content > div > img{
+    margin-left: 10%;
+    width: 80%;
+    height: 10em;
+}
+
+.BookShelf_content > .Book > .Book_content > p:nth-child(3){
+color: red;
+font-weight: bold;
+}
+
+.BookShelf_content > .Book > .Book_content > p:nth-child(4){
+    text-decoration: line-through;
+}
+.BookShelf_content{
+    display: flex;
+    flex-wrap: wrap; /* Thêm thuộc tính này để cho phép xuống dòng */
+    margin-left: 3%;
+}
+
+.BookShelf_content > .Book > p{
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.Next_Previous{
+    justify-content: center;
+   font-size: 1em;
+   display: flex;
+    align-items: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.Next_Previous > a > i{
+    color: orange;
+}
+.Next_Previous > p {
+    margin: 0 2% 0 2%;
+    background-color: #c92127;
+    border-radius: 1em;
+    padding: 10px 15px; /* 10px trên và dưới, 20px trái và phải */
+    color: white;
+}
+
+.custom-select{
+    border-radius: 1.2em;
+    font-size: 0.8em;
+}

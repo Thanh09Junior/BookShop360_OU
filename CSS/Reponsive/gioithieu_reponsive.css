@@ -1,0 +1,136 @@
+@media only screen and (max-width: 600px) {
+  .Cinema {
+    padding-top: 30% !important;
+    padding-bottom: 25% !important;
+    overflow: hidden;
+    font-size: 1.4vw !important; 
+}
+
+.Social_icon > a > i{
+    font-size: 2em !important;
+}
+
+.Cinema_Container > .Clock{
+    width: 53% !important; 
+}
+
+.Cinema >a>p{
+    max-width: 9em !important;
+    font-size: 1.5em;
+}
+
+
+/*---------- Bookshop_Introduction -----------*/
+.Bookshop_Introduction{
+    padding-top: 8vh !important;
+}
+
+.Introduction_container{
+    padding-bottom: 1.5em !important;
+    font-size: 2vw !important;
+}
+
+
+.Introduction_container > .Bookshop_img > img{
+  width: 90% !important;
+  transform: translate(-10%,120%);
+}
+
+.Introduction_container > .Content{
+    width: 50% !important;
+    margin-left: 2%;
+}
+
+.Introduction_container > .Content >.Subcontent{
+    font-size: 1.2em !important;
+}
+
+
+/*---------- Bookshop_Services-----------*/
+.Bookshop_Services{
+  font-size: 1.8vw !important;
+}
+
+.Service_container{
+  background-color: white;
+  padding-top: 5em !important;
+  padding-bottom: 8em !important;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em !important;
+  flex-wrap: wrap;
+}
+
+.Service_container > .Service{
+  width: 40% !important;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+
+.Service_container > .Service > i{
+  font-size: 2em !important;
+  color: rgb(0, 60, 255);
+}
+
+.Service_container > .Service > div > p{
+  color: black;
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+/*----------------- Owner Container *------------------*/
+.Owner_container{
+    font-size: 2.2vw !important;
+}
+
+.Owner_container > .Person{
+    margin-left: 2%;
+}
+
+
+/*--------- Help section -------------*/
+.Get_Help{
+    background-color: rgb(255, 239, 239);
+    padding-top: 8vh;
+    padding-bottom: 12vh;
+    border: 1px solid black;
+    font-size: 1.8vw !important;
+}
+
+.Help_section{
+    padding-top: 10em !important;
+}
+
+.Help_section > .Help_content > .Subhelp{
+    display: none !important;
+}
+
+.Help_section > .Help_content > .Form{
+    width: 80% !important; 
+}
+
+
+
+.Form > div{
+    width: 50%;
+}
+.Form> div:first-child {
+    text-align: center;
+    font-size: 1.6em !important;
+}
+
+.Forms > form > label{
+    display: block;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 1.5em !important;
+}
+
+.Forms > form > input{
+    display: block;
+    font-size: 1.4em !important;
+}
+
+}
+

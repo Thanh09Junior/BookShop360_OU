@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!------- Các thẻ meta sử dụng  --------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bookshop 360 - Đồng hành cùng bạn tìm nên tri thức">
+    <meta name="keywords" content="sách, bookshop, mua sách online, tri thức, kiến thức">
+    <meta name="author" content="Junior Thành và Phong">
+    <meta name="copyright" content="© 2024 BookShop360. Mọi bản quyền được bảo lưu bởi hai nhà sở hữu.">
+
+    <!------- Các tài nguyên framework sử dụng --------->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!------ Các tài nguyên CSS nội bộ ---------------->
+    <link rel="shortcut icon" href="../Assest/Home/Icon.webp" />
+    <link rel="stylesheet" href="../CSS/GioiThieu.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <title>BookShop360 - Highlight</title>
+</head>
+
+<body>
+    <div id="Arrow_Up">
+        <a href="#"><i class="fa-solid fa-caret-up" style="color: white;"></i></a>
+    </div>
+
+    <div class="preloader">
+        <img alt="Picture" src="../Assest_Gif_Video/preloader_gif/preload.gif">
+        <div class="loading-text"><a>0%</a></div>
+    </div>
+
+    <div id="Black_glass"></div>
+    <div id="Account" class="Account">
+        <div class="Login_Panel">
+            <h1>BookShop 360</h1>
+            <div class="Selection">
+                <a href="#" id="loginTab">
+                    <p>Đăng nhập</p>
+                </a>
+                <a href="#" id="registerTab">
+                    <p>Đăng ký</p>
+                </a>
+            </div>
+            <hr>
+
+            <div id="loginInfo" class="Information">
+                <label>Số điện thoại/Email</label>
+                <input type="text" placeholder="Tên tài khoản">
+                <label>Mật khẩu</label>
+                <input type="text" placeholder="Mật khẩu" id="LoginNow">
+                <a href="#" style="color:blue">Quên mật khẩu?</a>
+                <div class="Button">
+                    <a href="#">
+                        <p>Đăng nhập</p>
+                    </a>
+                    <a href="#">
+                        <p>Bỏ qua</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="registerInfo" class="Information" style="display: none;">
+                <label>Tên tài khoản</label>
+                <input type="text" placeholder="tên tài khoản">
+                <label>Tạo mật khẩu</label>
+                <input type="password" placeholder="Tạo mật khẩu">
+                <label>Xác nhận mật khẩu</label>
+                <input type="password" placeholder="Xác nhận mật khẩu" id="Repassword">
+                <div class="Button">
+                    <a href="#">
+                        <p>Đăng ký</p>
+                    </a>
+                    <a href="#">
+                        <p>Bỏ qua</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <div class="Nav_Logo">
+                <div>
+                    <a href="../index.html"><img alt="Picture" src="../Assest/Home/logo.webp"></a>
+                </div>
+            </div>
+
+            <div class="menu_left">
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="./GioiThieu.html">Giới thiệu</a></li>
+                    <li>
+                        <a href="./Shop.html"> Mua sách</a>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle-submenu"><i class="fa-solid fa-chevron-right"></i> Fanpage</a>
+                        <ul class="submenu animate__animated animate__fadeInDown">
+                            <li><a href="https://facebook.com" target="_blank">Facebook</a>
+                                <hr>
+                            </li>
+                            <li><a href="https://youtube.com" target="_blank">Youtube</a>
+                                <hr>
+                            </li>
+                            <li><a href="https://linkedin.com" target="_blank">Linkedin</a>
+                                <hr>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../Hightlight.html">Hightlight</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu_right">
+                <ul>
+                    <li>
+                        <div>
+                            <input class="input" type="text" id="search-input" placeholder="Nhập nội dung cần tìm">
+                            <a href="#" id="search-button"
+                                aria-label="Search thông tin sách (tạm thời không hoạt động)"> <i
+                                    class="fa-solid fa-magnifying-glass" style="font-size: 1.5em;"></i></a>
+                        </div>
+                    </li>
+                    <li> <a href="#" class="toggle-submenu" aria-label="Menu"><i
+                                class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="submenu animate__animated animate__fadeInDown">
+                            <li><a href="../index.html">Trang chủ</a>
+                                <hr>
+                            </li>
+                            <li><a href="./GioiThieu.html">Giới thiệu</a>
+                                <hr>
+                            </li>
+                            <li><a href="./Shop.html">Mua sách</a>
+                                <hr>
+                            </li>
+                            <li><a href="../Hightlight.html">Highlight</a>
+                                <hr>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./taikhoan.html" id="login" aria-label="Tài khoản"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li><a href="./giohang.html" aria-label="Giỏ hàng"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="Cinema">
+            <div class="Cinema_Container">
+                <div class="Content animate__animated animate__fadeInLeft">
+                    <h2 style="color: rgb(0, 255, 179)">BookShop360</h2>
+                    <h2>Website mua bán sách trực tuyến uy tín Việt Nam. Khi chất lượng không chỉ nằm ở những cuốn
+                        sách
+                        mà
+                        còn ở khách hàng.</h2>
+                    <div class="Social_icon">
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: white"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube " style="color: white"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin" style="color: white"></i></a>
+                    </div>
+                </div>
+
+                <div class="Clock animate__animated animate__fadeInRight">
+                    <h2 style="color: rgb(0, 255, 179)">Thời gian hiện tại</h2>
+                    <p id="Timer"></p>
+                    <p>Sách giống như một người bạn đồng hành<br>cùng ta san sẻ kiến thức</p>
+                </div>
+
+            </div>
+            <a href="#Sec1">
+                <p>Tìm hiểu</p>
+            </a>
+        </section>
+
+        <section class="Bookshop_Introduction" id="Sec1">
+            <div class="Introduction_container">
+                <div class="Content">
+                    <div class="Subcontent" data-aos="fade-right">
+                        <h3 style="color: rgb(25, 139, 226)">1. Xuất hiện</h3>
+                        <hr>
+                        <p>Ra đời vào năm 2024. Trong bối cảnh nhu cầu mua sắm trực tuyến ngày càng gia tăng. Vì vậy
+                            Bookshop 360 ra đời và hỗ trợ mọi người trong việc mua sách Online.</p>
+                    </div>
+                    <div class="Subcontent" data-aos="fade-right">
+                        <h3 style="color: rgb(76, 0, 255)">2. Mục tiêu</h3>
+                        <hr>
+                        <p>Mục tiêu của BookShop 360 là chất lượng, nhanh gọn và tiện ích. Nhằm đem đến những trải
+                            nghiệm
+                            tốt nhất cho người dùng. Châm ngôn của chúng tôi: Tận tụy với sách và tận tâm với đọc giả
+                        </p>
+                    </div>
+                </div>
+
+                <div class="Bookshop_img">
+                    <img alt="logo" src="../Assest/GioiThieu/logo2.webp" />
+                </div>
+
+                <div class="Content">
+                    <div class="Subcontent" data-aos="fade-left">
+                        <h3 style="color: rgb(0, 4, 255)">3. Nhà sáng lập</h3>
+                        <hr>
+                        <p>Website BookShop 360 được sáng lập bởi hai thành viên là Junior Thành (Designer) và Thanh
+                            Phong
+                            (Developer). Đọc giả có thể xem thêm thông tin hai nhà sáng lập ở bên dưới</p>
+                    </div>
+                    <div class="Subcontent" data-aos="fade-left">
+                        <h3 style="color: rgb(226, 25, 25)">4. Các loại sách</h3>
+                        <hr>
+                        <p>BookShop 360 bán mọi loại sách trong và ngoài nước. Đọc giả có thể tìm thấy sách mình mong
+                            muốn ở
+                            đây. Cam kết nếu không tìm thấy sách sẽ bổ sung trong tầm 7 ngày!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Bookshop_Services" data-aos="fade-up" id="Sec3">
+            <p
+                style="background-color: white; text-align:center; padding: 0; margin: 0; color: rgb(0, 60, 255); font-size: 1.8em; padding-top: 15px">
+                Các dịch vụ cung cấp</p>
+            <div class="Service_container">
+                <div class="Service">
+                    <i class="fa-solid fa-store"></i>
+                    <h3>Mua Sách</h3>
+                    <hr />
+                    <div>
+                        <p>Website cho phép mua sách trực tuyến. Đọc giả lựa chọn cuốn sách mình thích rồi cho vào giỏ
+                            hàng,
+                            nhập các thông tin tương ứng rồi thanh toán.</p>
+                    </div>
+                    <hr /><br /><a href="#Sec3" class="Tutorial">Xem hướng dẫn tại đây</a>
+                </div>
+
+                <div class="Service">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>Tìm Kiếm Sách</h3>
+                    <hr />
+                    <div>
+                        <p>Website cung cấp chức năng tìm kiếm sách mong muốn. Bao gồm thông tin sách, thời gian xuất
+                            bản,
+                            giá
+                            thị trường, nội dung, v.v. Đảm bảo cập nhật thị trường sách dưới 7 ngày!</p>
+                    </div>
+                    <hr /><br /><a href="#Sec3" class="Tutorial">Xem hướng dẫn tại đây</a>
+                </div>
+
+                <div class="Service">
+                    <i class="fa-brands fa-readme"></i>
+                    <h3>Đọc Thử</h3>
+                    <hr />
+                    <div>
+                        <p>Website cho phép các đọc giả đọc thử vài trang đầu dưới dạng E-Book/pdf để đem đến trải
+                            nghiệm và
+                            lựa
+                            chon tốt nhất cho các đọc giả trước khi mua sách.</p>
+                    </div>
+                    <hr /><br /> <a href="#Sec3" class="Tutorial">Xem hướng dẫn tại đây</a>
+                </div>
+
+                <div class="Service">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h3>Hỗ Trợ</h3>
+                    <hr>
+                    <div>
+                        <p>Đội ngũ hỗ trợ luôn trực 24/7. Sẵn sàng giải đáp thắc mắc cũng như những khiếu nại từ đọc
+                            giả.
+                            Đồng
+                            thời cho phép đọc giả đóng góp ý kiến thì tham khảo hướng dẫn bên dưới.</p>
+                    </div>
+                    <hr /><br /><a href="#Sec3" class="Tutorial">Xem hướng dẫn tại đây</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Owner" id="Sec4">
+            <div class="Owner_container" data-aos="fade-up">
+                <div class="Person">
+                    <div class="Person_img">
+                        <img alt="logo" src="../Assest/GioiThieu/Thanh.webp" />
+                    </div>
+
+                    <h3 style="margin-top: 6%">Junior Thành (Trung Thành)</h3>
+                    <hr />
+                    <div class="Person_information">
+                        <p>Biệt danh: Junior Thành</p>
+                        <p>Vai trò: Designer - Tester</p>
+                        <p>Miêu tả: Đóng vai trò là thành viên cốt cán trong xây dựng website. Đảm bảo mọi thứ hoạt động
+                            đúng cách và đem đến trải nghiệm tốt nhất cho đọc giả.</p>
+                    </div>
+
+                    <hr />
+                    <a href="#Sec4">
+                        <h4>Download CV - PDF file</h4>
+                    </a>
+                </div>
+
+                <div class="Person">
+                    <div class="Person_img">
+                        <img alt="logo" src="../Assest/GioiThieu/Phong.webp" />
+                    </div>
+
+                    <h3>Phong (Thanh Phong)</h3>
+                    <hr />
+                    <div class="Person_information">
+                        <p>Biệt danh: Accountant (Kế toán)</p>
+                        <p>Vai trò: Developer</p>
+                        <p>Miêu tả: Đóng vai trò then chốt trong việc xây dựng website. Đảm bảo website được xây dựng
+                            đúng
+                            và đảm nhiệm vai trò phát triển website</p>
+                    </div>
+
+                    <hr />
+                    <a href="#Sec4">
+                        <h4>Download CV - PDF file</h4>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Get_Help">
+            <h3 style="text-align: center; font-size: 1.8em; color: rgb(0, 60, 255)">Liên hệ và Hỗ trợ</h3>
+            <div class="Help_section">
+                <div class="Help_content">
+                    <div class="Subhelp">
+                        <p><i class="fa-solid fa-envelope" style="color: rgb(0, 102, 255); margin-right: 20px;"></i><a
+                                href="#">2351050164thanh@ou.edu.vn</a></p>
+                        <p><i class="fa-solid fa-map" style="color: rgb(0, 102, 255); margin-right: 20px;"></i><a
+                                href="#">Đại học Mở TP.Hồ Chí Minh</a></p>
+                        <p><i class="fa-solid fa-phone" style="color: rgb(0, 102, 255); margin-right: 20px;"></i><a
+                                href="#">087643511</a></p>
+                        <p><i class="fa-solid fa-briefcase" style="color: rgb(0, 102, 255); margin-right: 20px;"></i><a
+                                href="">Làm việc 24/7</a></p>
+                        <p><i class="fa-solid fa-pager" style="color: rgb(0, 102, 255); margin-right: 20px;"></i><a
+                                href="#">BookShop 360 - Trang Chủ</a></p>
+                    </div>
+
+                    <div class="Form">
+                        <div>
+                            <h3 style="color: orange;">BookShop 360</h3>
+                            <p style="color: white;">Gửi thắc mắc tại đây</p>
+                        </div>
+                        <div class="Forms">
+                            <form>
+                                <label>Tên</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Nhập tên của bạn" required>
+                                <label>Email</label>
+                                <input type="text" name="firstname" placeholder="Nhập Email" required>
+                                <label>Chủ đề</label>
+                                <input type="text" name="lastname" placeholder="Nhập chủ đề" required>
+                                <label>Nội dung (Resize able)</label>
+                                <textarea cols="18" rows="3" aria-label="Nhập nội dung thắc mắc tại đây"
+                                    required></textarea>
+                                <input id="Button" type="submit" value="Xác nhận" onclick="showAlert()" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Footer_content" data-aos="fade-up">
+            <div class="Superlink">
+                <div class="Link">
+                    <h3>Website</h3>
+                    <ul>
+                        <li><a href="https://ou.edu.vn" target="_blank">Đại học Mở TP.HCM</a></li>
+                        <li><a href="https://Wikipedia.com" target="_blank">Wikipedia</a></li>
+                    </ul>
+                </div>
+
+                <div class="Link">
+                    <h3>Sách phổ biến</h3>
+                    <ul>
+                        <li><a href="./HTML/Book/Sach.html?id=2" target="_blank">Đắc nhân tâm</a></li>
+                        <li><a href="./HTML/Book/Sach.html?id=7" target="_blank">Nhà giả kim</a></li>
+                        <li><a href="./HTML/Book/Sach.html?id=9" target="_blank">Ori and the will of Wisps</a></li>
+                        <li><a href="./HTML/Book/Sach.html?id=14" target="_blank">Tuổi trẻ đáng giá bao nhiêu</a></li>
+                        <li><a href="./HTML/Book/Sach.html?id=4" target="_blank">Không gia đình</a></li>
+                    </ul>
+                </div>
+
+                <div class="Link">
+                    <h3>Thể loại sách</h3>
+                    <ul>
+                        <li><a href="./HTML/Shop.html" target="_blank">Truyện tranh</a></li>
+                        <li><a href="./HTML/Shop.html" target="_blank">Sách giáo khoa</a></li>
+                        <li><a href="./HTML/Shop.html" target="_blank">Sách trong nước</a></li>
+                        <li><a href="./HTML/Shop.html" target="_blank">Sách ngoài nước</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Khác</h3>
+                    <ul>
+                        <li><a href="./HTML/Shop.html" target="_blank">Mua sách</a></li>
+                        <li><a href="#" target="_blank">Hỗ trợ</a></li>
+                        <li><a href="#" target="_blank">Đánh giá</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="Conclusion">
+                <div class="Conclusion_left">
+                    <h3 style="color: blue;">Bookshop 360: Đồng hành cùng bạn - khám phá tri thức</h3>
+                    <p style="text-align: justify;">
+                        BookShop 360 trang mua bán sách trực tuyến uy tin bật nhất Việt Nam. Cam đoan chất lượng sản
+                        phẩm cũng như là hỗ trợ khách hàng tận tâm.
+                    </p>
+                    <p style="font-weight:bold; text-align:  justify;">
+                        Lưu ý: BookShop 360 nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận
+                        hàng trực tiếp tại văn phòng.
+                    </p>
+                </div>
+
+                <div class="Conclusion_right">
+                    <div>
+                        <img alt="logo" src="../Assest/Home/logo.webp">
+                    </div>
+                    <ul>
+                        <li><a href="https://facebook.com" aria-label="Facebook"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://youtube.com" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li><a href="https://linkedin.cin" aria-label="Linkedin"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://ou.edu.vn" aria-label="Wikipedia"><i class="fa-solid fa-globe"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <a href="#">
+            <p>© 2024 Bản quyền thuộc về Junior Thành và Thanh Phong. Bảo lưu mọi quyền sở hữu.</p>
+        </a>
+    </footer>
+
+    <!--------------- Phần javascript mà trang sử dụng ---------------->
+    <script src="../JavaScript/Preloader.js"></script>
+    <script src="../JavaScript/GT_Clock.js"></script>
+    <script src="../JavaScript/Nav.js"></script>
+    <script src="../JavaScript/Arrow_up.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JavaScript/datasever.js"></script>
+    <script src="//code.tidio.co/nonyzqrlawdmulhzdgjx19a3cpwzgq1h.js" async></script>
+    <script src="../JavaScript/search.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

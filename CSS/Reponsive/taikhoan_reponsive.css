@@ -1,0 +1,59 @@
+@media only screen and (max-width: 600px) {
+    .Panel_header{
+        margin-top: 37% !important;
+    }
+    
+    
+    /*----------------*/
+    .Pannel_Details{
+        font-size: 2.2vw !important;
+        margin-bottom: 37% !important;
+    }
+
+    .Bought_items > div > img{
+        width: 8em !important;
+    }
+    
+    
+    
+    
+    /*------------------------*/
+    .Account_Edit{
+       font-size: 2.2vw !important;
+    }
+
+    
+    
+    /*----------------------*/
+    
+    .Settings{
+        padding-top: 2%;
+        padding-bottom: 10%;
+        margin-left: 3%;
+    }
+    
+    .Settings_content{
+        display: flex;
+        justify-self: space-evenly;
+    }
+    
+    
+    .Settings_content > a{
+        width: 40%;
+    }
+    
+    .Settings_content > a > p{
+        padding: 1em;
+        border: 2px solid red;
+        width: 8em;
+        text-align: center;
+        border-radius: 1em;
+    }
+    
+    .Settings_content > a > p:hover{
+        background-color: #c92127;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+}
+
