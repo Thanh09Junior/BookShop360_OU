@@ -1,0 +1,164 @@
+@import url(./Reponsive/sach.css);
+
+.Header_Info{
+    display: flex;
+}
+
+.book_container{
+    width: 94%;
+    display: flex;
+    margin: 0 auto;
+    padding: 2% 0 5% 0;
+    font-size: 1.2vw;
+}
+
+/*Mục book trái */
+
+.Book_Left{
+    width: 40%;
+    padding: 2% 0 2% 0;
+    margin-right: 3%;
+    border-radius: 1em;
+
+    top: 20px;
+    position: sticky;
+    align-self: flex-start;
+    background-color: white;
+}
+
+.Book_Left > .img{
+    margin-left: 35%;
+}
+
+.book > div:first-child > p{
+    margin: 0 0 0 3%;
+    font-size: 1.2vw;
+}
+
+.book{
+    padding-top: 8%;
+}
+
+.Additional{
+    margin-left: 3%;
+}
+
+.Additional > ul{
+    margin-left: 3%;
+}
+
+.Additional > ul > li{
+    line-height: 2em;
+}
+
+/*Khung chứa các ảnh nhỏ*/
+
+.Small_img{
+    width: 91%;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.Small_img > div{
+    width: 23%;
+}
+
+.Small_img > div > img{
+    width: 90%;
+}
+
+.Small_img:hover{
+    border: 1px solid blue;
+}
+
+.Small_img > div > img:hover{
+    border: 1px solid blue;
+}
+
+/*Mục table của sách*/
+
+.book_info > table > tbody > tr{
+    line-height: 1.5em;  
+}
+
+.book_info > table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.book_info > table > tbody > tr> td{
+    border-bottom: 0.5px solid #c8c8c8;
+}
+
+.book_info > table > tbody > tr> td:first-child{
+    color: rgb(74, 74, 74);
+}
+
+.book_info > table > tbody > tr> td:last-child{
+    padding-left: 5%;
+}
+
+.Header_Info > div:last-child{
+    margin-left: 20%;
+}
+
+/*Mục mua sách*/
+
+.Buy_Book{
+    display: flex;
+}
+
+.Buy_Book > a{
+    margin-left: 3%;
+}
+
+.Buy_Book > a:first-child{
+    width: 45%;
+    padding: 1px;
+    border: 2px solid #c92127;
+    border-radius: 10px;
+
+    color: #c92127;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Buy_Book > a:last-child{
+    width: 40%;
+    padding: 1px 3% 1px 1px;
+    text-align: center;
+    border-radius: 10px;
+
+    color: #be2227;
+    background-color: #c92127;
+    font-weight: bold;
+}
+
+.Buy_Book > a:last-child > p{
+    color: white;
+    margin-left: 5%;
+
+}
+
+/*Mục sách phải*/
+.Book_Right{
+    width: 60%;
+}
+
+.Book_Right > div{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 3%;
+}
+
+.Book_description > ul > li{
+    line-height: 2em;
+}

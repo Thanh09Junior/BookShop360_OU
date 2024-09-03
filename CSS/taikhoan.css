@@ -1,0 +1,164 @@
+@import url(./Reponsive/taikhoan_reponsive.css);
+
+/*------------ CSS của phần định hướng (4 chức năng) -------------*/
+.Panel_header{
+    font-size: 1.2vw;
+    width: 92%;
+    margin: 10% 0 0 5%;
+}
+
+.Panel_header > ul{
+    display: flex;
+    align-items: center;
+}
+
+.Panel_header > ul > li{
+    border: 1px solid gray;
+    background-color: white;
+    font-size: 1.2em;
+    padding: 2% 8% 2% 8%;
+}
+
+.Panel_header > ul > li:hover{
+    background-color: rgb(0, 81, 255);
+    transition:  0.3s ease-in-out;
+}
+
+.Panel_header > ul > li:hover > a{
+    color:white;
+}
+
+/*------------- CSS của phần nội dung tương ứng chức năng ---------*/
+
+.Pannel_Details{
+    font-size: 1.3vw;
+    width: 89%;
+    margin: 0 0 12% 5%;
+    background-color: white;
+}
+
+/*Thông tin chung*/
+.Pannel_Details > .Main_info{
+    padding: 5% 0 5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Pannel_Details > .Main_info > .Info_content{
+    margin-left: 8%;
+}
+
+.Main_info > .Img {
+    margin-right: 8%;
+}
+
+.Main_info > .Img > img{
+    width: 13em;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+/*Lịch sử mua hàng*/
+
+.Buy_History{
+   padding: 2% 0 10% 0;
+   margin: 0 2% 0 2%;
+}
+
+.Bought_items{
+    display: flex;
+    align-items: center;
+}
+
+.Bought_items > div > img{
+    width: 100px;
+}
+.Bought_items > div{
+    width: 15%;
+    margin-left: 5%;
+}
+.Bought_items > p:not(:first-child){
+    width: 20%;
+    margin-left: 3%;
+}
+
+/*Chỉnh sửa tài khoản*/
+
+.Account_Edit{
+   padding: 2% 0 10% 0;
+   margin: 0 2% 0 2% 0;
+   font-size: 1.3vw;
+}
+
+.editor{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.editor > .Info_left > input{
+    display: block;
+    width: 20em;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+
+.editor > .Info_Right > input{
+    display: block;
+    width: 20em;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+
+.Center{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.Center > input{
+    display: block;
+    width: 20em;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    font-size: 1em;
+}
+
+.Account_Edit > button{
+    font-size: 1.1em;
+    margin: 2% 0 0 46%;
+}
+
+
+/*Phần cài đặt website*/
+
+.Settings{
+    padding: 2% 0 10% 0;
+    margin-left: 3%;
+}
+
+.Settings_content{
+    display: flex;
+}
+
+
+.Settings_content > a{
+    width: 40%;
+}
+
+.Settings_content > a > p{
+    padding: 1em;
+    border: 2px solid red;
+    width: 8em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.Settings_content > a > p:hover{
+    background-color: #c92127;
+    color: white;
+    transition: 0.3s ease-in-out;
+}

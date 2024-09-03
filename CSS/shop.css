@@ -1,0 +1,144 @@
+@import url(./Reponsive/shop_reponsive.css);
+
+/*----------- CSS nội dung hiển thị sách -------------*/
+.shop_container{
+    width: 94%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 1.1vw;
+}
+
+.shop > div:first-child > p{
+    margin: 0 0 0 3%;
+    font-size: 1.3vw;
+}
+
+.shop{
+    padding-top: 8%;
+}
+
+/*Nội dung bên trái sách*/
+.Nav_Category{
+    width: 30%;
+    margin-right: 3em;
+    height: 1%;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.Nav_Category > h2{
+    margin-left: 3%;
+    color: #c92127;
+}
+
+input[type="checkbox"] {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.Nav_Category > ul > li > a > p:hover{
+    color: rgb(255, 68, 0);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.Nav_Category > ul{
+    margin-left: 10%;
+    line-height: 1.5em;
+}
+
+/*Phần nội dung sách (bên phải)*/
+
+/*Phần sort*/
+.Sort{
+    padding-top: 2%;
+    padding-left: 3%;
+    display: flex;
+}
+
+.custom-select{
+    margin-left: 2%;
+}
+
+.Sort{
+    font-size: 1.1em;
+}
+
+.custom-select{
+    border-radius: 1.2em;
+    font-size: 0.8em;
+}
+
+/*Phẩn thể hiện nội dung*/
+.shop_container > .BookShelf{
+    background-color: white;
+    width: 75%;
+    border-radius: 1em;
+}
+
+.Book_content{
+    width: 80%;
+    padding: 1em;
+}
+
+.Book_content:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.BookShelf_content{
+    display: flex;
+    flex-wrap: wrap;/*Cho phép flex box xuống hàng*/
+    margin-left: 3%;
+}
+
+.BookShelf_content > .Book > p{
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.BookShelf_content > .Book{
+    width: 25%;
+    margin-bottom: 3%;
+}
+
+.BookShelf_content > .Book > .Book_content > div > img{
+    margin-left: 10%;
+    width: 80%;
+    height: 10em;
+}
+
+.BookShelf_content > .Book > .Book_content > p:nth-child(3){
+    color: red;
+    font-weight: bold;
+}
+
+.BookShelf_content > .Book > .Book_content > p:nth-child(4){
+    text-decoration: line-through;
+}
+
+/*Nút chuyển tiếp hoặc quay lại*/
+.Next_Previous{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 1em;
+}
+
+.Next_Previous > a > i{
+    color: orange;
+}
+
+.Next_Previous > p {
+    margin: 0 2% 0 2%;
+    background-color: #c92127;
+    border-radius: 1em;
+    padding: 10px 15px;
+    color: white;
+}
