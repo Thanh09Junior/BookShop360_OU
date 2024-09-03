@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!------- Các thẻ meta sử dụng  --------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bookshop 360 - Đồng hành cùng bạn tìm nên tri thức">
+    <meta name="keywords" content="sách, bookshop, mua sách online, tri thức, kiến thức">
+    <meta name="author" content="Junior Thành và Phong">
+    <meta name="copyright" content="© 2024 BookShop360. Mọi bản quyền được bảo lưu bởi hai nhà sở hữu.">
+
+    <!------- Các tài nguyên framework sử dụng --------->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!------ Các tài nguyên CSS nội bộ ---------------->
+    <link rel="shortcut icon" href="../Assest/Home/Icon.webp" />
+    <link rel="stylesheet" href="../CSS/taikhoan.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <title>BookShop360 - Highlight</title>
+</head>
+
+<body>
+    <!---------- Phần đăng nhập và đăng kí ---------------->
+    <div id="Black_glass"></div>
+    <div id="Account" class="Account">
+        <div class="Login_Panel">
+            <h1>BookShop 360</h1>
+            <div class="Selection">
+                <a href="#" id="loginTab">
+                    <p>Đăng nhập</p>
+                </a>
+                <a href="#" id="registerTab">
+                    <p>Đăng ký</p>
+                </a>
+            </div>
+            <hr>
+
+            <div id="loginInfo" class="Information">
+                <label>Số điện thoại/Email</label>
+                <input type="text" placeholder="Tên tài khoản">
+                <label>Mật khẩu</label>
+                <input type="text" placeholder="Mật khẩu" id="LoginNow">
+                <a href="#" style="color:blue">Quên mật khẩu?</a>
+                <div class="Button">
+                    <a href="#">
+                        <p>Đăng nhập</p>
+                    </a>
+                    <a href="#">
+                        <p>Bỏ qua</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="registerInfo" class="Information" style="display: none;">
+                <label>Tên tài khoản</label>
+                <input type="text" placeholder="tên tài khoản">
+                <label>Tạo mật khẩu</label>
+                <input type="password" placeholder="Tạo mật khẩu">
+                <label>Xác nhận mật khẩu</label>
+                <input type="password" placeholder="Xác nhận mật khẩu" id="Repassword">
+                <div class="Button">
+                    <a href="#">
+                        <p>Đăng ký</p>
+                    </a>
+                    <a href="#">
+                        <p>Bỏ qua</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- Phần nội dung header  ---------------->
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <div class="Nav_Logo">
+                <div>
+                    <a href="../index.html"><img alt="Picture" src="../Assest/Home/logo.webp" /></a>
+                </div>
+            </div>
+
+            <div class="menu_left">
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="./GioiThieu.html">Giới thiệu</a></li>
+                    <li>
+                        <a href="./Shop.html"> Mua sách</a>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle-submenu"><i class="fa-solid fa-chevron-right"></i> Fanpage</a>
+                        <ul class="submenu animate__animated animate__fadeInDown">
+                            <li><a href="https://facebook.com" target="_blank">Facebook</a>
+                                <hr>
+                            </li>
+                            <li><a href="#" title="Hiện tại website chưa có fanpage Youtube">Youtube</a>
+                                <hr>
+                            </li>
+                            <li><a href="#" title="Hiện tại website chưa có fanpage Linkedin">Linkedin</a>
+                                <hr>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../highlight.html">Highlight</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu_right">
+                <ul>
+                    <li>
+                        <div>
+                            <input class="input" type="text" id="search-input" placeholder="Nhập nội dung cần tìm">
+                            <a href="#" id="search-button"
+                                aria-label="Search thông tin sách (tạm thời không hoạt động)"> <i
+                                    class="fa-solid fa-magnifying-glass" style="font-size: 1.5em;"></i></a>
+                        </div>
+                    </li>
+                    <li> <a href="#" class="toggle-submenu" aria-label="Menu"><i
+                                class="fa-solid fa-chevron-right"></i></a>
+                        <ul class="submenu animate__animated animate__fadeInDown">
+                            <li><a href="../index.html">Trang chủ</a>
+                                <hr>
+                            </li>
+                            <li><a href="./GioiThieu.html">Giới thiệu</a>
+                                <hr>
+                            </li>
+                            <li><a href="./Shop.html">Mua sách</a>
+                                <hr>
+                            </li>
+                            <li><a href="../highlight.html">Highlight</a>
+                                <hr>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./taikhoan.html" id="login" aria-label="Tài khoản"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li><a href="./giohang.html" aria-label="Giỏ hàng"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!---------- Phần nội dung chính của trang ---------------->
+    <main>
+        <section>
+            <div class="Panel_header"> <!---------- Thanh điều hướng chức năng ---------------->
+                <ul>
+                    <li><a href="#" id="account-link">Tài khoản</a></li>
+                    <li><a href="#" id="history-link">Lịch sử mua hàng</a></li>
+                    <li><a href="#">Chỉnh sửa</a></li>
+                    <li><a href="#">Cài đặt</a></li>
+                </ul>
+            </div>
+
+            <div class="Pannel_Details"> <!---------- Thể hiện thông tin tương ứng---------------->
+                <div class="Main_info"> <!---------- Mục thông tin chung ---------------->
+                    <div class="Info_content">
+                        <h2 style="color:brown">Thông tin chung</h2>
+                        <hr />
+                        <p>Tên tài khoản: <span id="username"></span></p>
+                        <p>Ngày khởi tạo: <span id="creationTime"></span></p>
+                        <p>Số lượng hàng đã mua: <span id="totalQuantity"></span> </p>
+                    </div>
+
+                    <div class="Img">
+                        <img src="../Assest/Home/Icon.webp" alt="Logo" />
+                    </div>
+                </div>
+
+                <div class="Buy_History"> <!---------- Mục lịch sử mua hàng ---------------->
+                    <h2 style="color:brown">Sách mà bạn đã mua</h2>
+                    <hr />
+                    <div class="Bought_items_list"></div>
+                </div>
+
+                <div class="Account_Edit"> <!---------- Mục chỉnh sửa tên tài khoản ---------------->
+                    <h2 style="color:brown">Chỉnh sửa tài khoản</h2>
+                    <hr>
+                    <div class="editor">
+                        <div class="Info_left">
+                            <label for="newUsername">Vui lòng nhập tên tài khoản</label>
+                            <input type="text" id="newUsername" required>
+                        </div>
+                        <div class="Info_Right">
+                            <label for="confirmNewUsername">Vui lòng nhập lại tên tài khoản: </label>
+                            <input type="text" id="confirmNewUsername" required>
+                        </div>
+                    </div>
+
+                    <div class="Center"> <!---------- Phần đăng nhập và đăng kí ---------------->
+                        <label>Yêu cầu nhập mật khẩu hiện tại: </label>
+                        <input type="password" id="currentPassword" required>
+                    </div>
+
+                    <button id="updateUsernameBtn">Xác nhận</button>
+                </div>
+
+                <div class="Settings"> <!---------- Phần tuỳ chỉnh website ---------------->
+                    <h2 style="color:brown">Cài đặt Website</h2>
+                    <hr>
+                    <div class="Settings_content">
+                        <a href="#">
+                            <p>Xoá tài khoản</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!---------- Phần nội dung footer ---------------->
+    <footer>
+        <div class="Footer_content" data-aos="fade-up">
+            <div class="Superlink"> <!---------- Phần liên kết ngoài ---------------->
+                <div class="Link">
+                    <h3>Website</h3>
+                    <ul>
+                        <li><a href="https://ou.edu.vn" target="_blank">Đại học Mở TP.HCM</a></li>
+                        <li><a href="https://Wikipedia.com" target="_blank">Wikipedia</a></li>
+                    </ul>
+                </div>
+
+                <div class="Link">
+                    <h3>Sách phổ biến</h3>
+                    <ul>
+                        <li><a href="../HTML/Book/Sach.html?id=2" target="_blank">Đắc nhân tâm</a></li>
+                        <li><a href="../HTML/Book/Sach.html?id=7" target="_blank">Nhà giả kim</a></li>
+                        <li><a href="../HTML/Book/Sach.html?id=9" target="_blank">Ori and the will of Wisps</a></li>
+                        <li><a href="../HTML/Book/Sach.html?id=14" target="_blank">Tuổi trẻ đáng giá bao nhiêu</a></li>
+                        <li><a href="../HTML/Book/Sach.html?id=4" target="_blank">Không gia đình</a></li>
+                    </ul>
+                </div>
+
+                <div class="Link">
+                    <h3>Thể loại sách</h3>
+                    <ul>
+                        <li><a href="../HTML/Shop.html" target="_blank">Truyện tranh</a></li>
+                        <li><a href="../HTML/Shop.html" target="_blank">Sách giáo khoa</a></li>
+                        <li><a href="../HTML/Shop.html" target="_blank">Sách trong nước</a></li>
+                        <li><a href="../HTML/Shop.html" target="_blank">Sách ngoài nước</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Khác</h3>
+                    <ul>
+                        <li><a href="../HTML/Shop.html" target="_blank">Mua sách</a></li>
+                        <li><a href="#" target="_blank">Hỗ trợ</a></li>
+                        <li><a href="#" target="_blank">Đánh giá</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="Conclusion"> <!---------- Phần chốt lại ---------------->
+                <div class="Conclusion_left">
+                    <h3 style="color: blue;">Bookshop 360: Đồng hành cùng bạn - khám phá tri thức</h3>
+                    <p style="text-align: justify;">
+                        BookShop 360 trang mua bán sách trực tuyến uy tin bật nhất Việt Nam. Cam đoan chất lượng sản
+                        phẩm cũng như là hỗ trợ khách hàng tận tâm.
+                    </p>
+                    <p style="font-weight:bold; text-align:  justify;">
+                        Lưu ý: BookShop 360 nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận
+                        hàng trực tiếp tại văn phòng.
+                    </p>
+                </div>
+
+                <div class="Conclusion_right">
+                    <div>
+                        <img alt="Picture" src="../Assest/Home/logo.webp" />
+                    </div>
+                    <ul>
+                        <li><a href="https://facebook.com" aria-label="Facebook"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://youtube.com" aria-label="Youtube"
+                                title="Hiện tại website chưa có fanpage Youtube"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li><a href="https://linkedin.cin" aria-label="Linkedin"
+                                title="Hiện tại website chưa có fanpage Linkedin"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://Wikipedia.com" aria-label="Wikipedia"><i class="fa-solid fa-globe"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <a href="#">
+            <p>© 2024 Bản quyền thuộc về Junior Thành và Thanh Phong. Bảo lưu mọi quyền sở hữu.</p>
+        </a>
+    </footer>
+
+    <!--------------- Phần javascript mà trang sử dụng ---------------->
+    <script src="../JavaScript/Nav.js"></script>
+    <script src="../JavaScript/datasever.js"></script>
+    <script src="../JavaScript/taikhoan.js"></script>
+    <script src="../JavaScript/Giohang.js"></script>
+    <script src="../JavaScript/search.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//code.tidio.co/nonyzqrlawdmulhzdgjx19a3cpwzgq1h.js" async></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

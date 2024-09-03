@@ -1,0 +1,83 @@
+@media only screen and (max-width: 600px) {
+  
+
+
+.Empty_Cart{
+    margin-top: 42% !important;
+    font-size: 2vw !important;
+    margin-bottom: 40% !important;
+}
+
+
+.Empty_Cart > a > p{
+    width: 20% !important;
+
+}
+
+
+/*--------not EMPTY CART*----------*/
+.Not_empty_cart{
+    display: block !important;
+    margin-bottom: 20%;
+    margin-top: 34% !important;
+    font-size: 2.0vw !important;
+    margin-bottom: 34% !important;
+}
+.Buy_list{
+    width: 95% !important;
+    margin-bottom: 5% !important;
+}
+
+
+.Buy_list_nav > p{
+    margin-left: 8% !important;
+}
+
+.List{
+    background-color: white;
+    padding: 5px;
+    border-radius: 0.8em;
+}
+.Items{
+    padding-top: 2%;
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+.Items > div{
+    width: 16%;
+    margin-left: 1%;
+}
+.Items > p{
+    margin-left: 10%;
+}
+
+.Items > p:nth-child(5){
+    margin-left: 13%;
+    color: #c92127;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.Items > a{
+    color: red;
+    margin-left: 7%;
+}
+
+
+.Pay_Menu{
+    width: 94% !important;
+}
+
+.content > p{
+    font-size: 1em !important;
+}
+
+
+
+.Pay_Menu > a > p{ 
+    font-size: 1em !important;
+    width: 30%;
+}
+}
+

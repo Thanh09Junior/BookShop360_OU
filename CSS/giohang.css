@@ -1,0 +1,161 @@
+@import url(./Reponsive/giohang_reponsive.css);
+
+/*---------- gif check thành công ------------*/
+.check_gif{
+    position: fixed;
+    z-index: 3000;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.check_gif > div > img{
+    width: 100%;
+}
+
+.Items_img{
+    width: 10em;
+}
+
+.Items_img > img{
+    width: 80%;
+}
+
+/*------------- CSS Cart rỗng ----------------*/
+.Empty_Cart{
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    padding: 5% 0 5% 0;
+
+    border-radius: 10px;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: white;
+}
+
+.img_cart{
+   width: 10em;
+   margin: 0 auto;
+}
+
+.img_cart > img{
+    width: 100%;
+}
+
+.Empty_Cart > a:hover > p{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.Empty_Cart > a > p{
+    width: 20%;
+    margin: 0 auto;
+    background-color: #c92127;
+
+    border-radius: 1em;
+    padding: 0.8em 1em 0.8em 1em;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*---------- CSS Cart khi có sản phẩm ---------*/
+
+.Not_empty_cart{
+    width: 90%;
+    display: flex;
+
+    margin: 0 auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    font-size: 1.2vw;
+}
+
+.Buy_list{
+    width: 70%;
+    margin-right: 3%;
+}
+
+.Buy_list_nav{
+    display:  flex;
+}
+
+.Buy_list_nav > p{
+    margin-left: 10%;
+}
+
+.Buy_list_nav{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.List{
+    background-color: white;
+    padding: 5px;
+    border-radius: 0.8em;
+}
+
+.Items{
+    padding-top: 2%;
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.Items > div{
+    width: 16%;
+    margin-left: 1%;
+}
+
+.Items > p{
+    margin-left: 10%;
+}
+
+.Items > p:nth-child(5){
+    margin-left: 13%;
+    color: #c92127;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.Items > a{
+    color: red;
+    margin-left: 7%;
+}
+
+.content > p{
+    padding-bottom: 15%;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+
+/*Pay_Menu*/
+.Pay_Menu{
+    width: 30%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    height: 30%;
+}
+
+.Pay_Menu > p{
+    font-weight: bold;
+}
+
+.Pay_Menu > a > p{  
+    text-align: center;
+    margin: 0 auto;
+    background-color: #c92127;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 2em 10px 2em;
+    margin-top: 10%;
+    font-weight: bold;
+}

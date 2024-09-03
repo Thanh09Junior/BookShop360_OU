@@ -1,0 +1,342 @@
+@media only screen and (max-width: 600px) {
+    
+    .preloader > img {
+        width: 70% !important;
+    }
+    
+    .loading-text {
+        font-size: 4.5vw !important; /* Kích thước chữ */
+    }
+    #Arrow_Up{
+       display: none !important;
+    }
+    .Account{
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+    .Login_Panel{
+        font-size: 4vw !important;
+    }
+    .Login_Panel > .Selection{
+       display: flex;
+       justify-content: none !important;
+       font-size: 1.2em !important;
+    }
+
+    .Login_Panel > h1{
+        margin-top: 15% !important;
+        font-size: 2em !important;
+    }
+    
+    
+    .Account{
+        padding: 3em !important;
+        font-size: 1.5em !important;
+    }
+    
+    .Information > label{
+        font-size: 1.1em !important;
+    }
+    
+    .Information > input{
+        display: block;  
+        width: 90%;
+        font-size: 1.3em !important;
+        margin-top: 4% !important;
+        margin-bottom: 9% !important;
+    }
+    
+    
+    .Button > a:nth-child(1) > p{
+        width: 80% !important;
+
+    }
+    
+    
+    .Button > a:nth-child(2) > p{
+        width: 80% !important;
+
+    }
+
+    .submenu>li>a{
+        font-size: 2em !important;
+    }
+    
+    /* menu phần trái*/
+    .menu_left {
+      display: none !important;
+    }
+    
+    nav {
+        justify-content:left !important;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* logo menu */
+    .Nav_Logo {
+        width: 40% !important;
+        margin-right: 30% !important;
+        margin-left: 2%;
+    }
+    
+    
+    .Nav_Logo>div>a>img {
+        width: 100% !important;
+    }
+    
+    /*Menu phần phải*/
+    .menu_right {
+        width: 20% !important;
+        font-size: 2.2vw !important;
+    }
+    .menu_right>ul>li{
+        margin-left: 25% !important; 
+    }
+    
+    
+    .menu_right>ul>li:first-child{
+      display: none !important;
+    }
+
+
+    .menu_right>ul>li>a>i{
+        font-size: 2.2em !important; 
+
+    }
+    .menu_right>ul>li:nth-child(2){
+        display: block !important;
+    }
+
+
+    
+    /*Quảng cáo*/ 
+    .Introduction_Page>.Introduction {
+        padding-top: 30vw !important;
+        padding-bottom: 25vw !important;
+        display: block !important;
+        
+    }
+    
+    .Introduction>.left_introduction{
+        width: 90% !important;
+        font-size: 2.5vw !important;
+        margin-left: 2% !important;
+    }
+    
+    .Introduction> .right_introduction{
+      display: none;
+    }
+
+    
+    .Introduction>div:first-child>a>p {
+        width: 20%;
+        font-size: 1.5em !important;
+    }
+    
+    
+    .Introduction_Page>.Category{
+        font-size: 1.8vw !important;
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+
+    .List > a > p{
+        font-size: 1.7em !important;
+    }
+    
+
+    
+    .List > div > img{
+        width: 6em !important;
+    }
+    
+    .List:nth-child(2) > div > img{
+        width: 4.6em !important;
+    }
+    
+    
+    /*------------Slide Show------------*/
+    .TopSellBook{
+        display: block !important;
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        width: 80% !important;
+        margin: 0 auto !important;
+    }
+      .mySlides img{
+        width: 110% !important;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        color: rgb(255, 0, 0) !important;
+        font-size: 3em !important;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        margin-left: 25em !important;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 2em !important;
+        width: 2em !important;
+      }
+    
+      .dot_container{
+        left: 34em !important;
+      }
+      
+
+    
+    .Book_info{
+        width: 85% !important;
+        margin-left: 8% !important;
+        font-size: 2vw !important;
+    }
+    
+    .Book_info > h3{
+        font-size: 2.5em !important;
+        color:#f6ff00;
+    }
+    .Book_info > div>i{
+        color:#f6ff00;
+    }
+
+    .Book_info > a > p{
+        width: 30% !important;
+        font-size: 2em !important;
+    }
+    .Book_info > a > p:hover{
+       background-color: #004cfe;
+       transition: 0.3s ease-in-out;
+    }
+    
+    
+    
+    /*---------------Quotes J.K-------------------*/
+    .BookSection_Introduction{
+        font-size: 2vw !important;
+    }
+    .BookSection_Introduction > p{
+        width: 90% !important;
+        font-size: 1.6em !important;
+    }
+
+    /*------------ Book Show --------------------*/
+    .Book_Container{
+        font-size: 2vw !important; 
+    }
+
+    .Book_Container >ul{
+        background-color: white;
+        display: flex;
+        padding-left: 10px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .Book_Container > ul > li{
+        width: 50% !important;
+        font-size: 1.5em;
+    }
+    
+    .Book_Container > a > p{
+        width: 20% !important;
+        font-size: 1.5em;
+    }
+
+    
+    .Left_ShowCase{
+        width: 97% !important;
+    }
+    
+    .Right_ShowCase{
+        display: none;
+    }
+    
+
+    .Left_ShowCase > .Book > .img_book{
+        width: 40% !important;
+    }
+    .Book_content > p{
+      font-size: 1.5em !important;
+    }
+    
+    .Left_ShowCase{
+        border-right: 0px solid black !important;
+    }
+    
+    /*Điền subcription*/
+    .Subcription{
+        font-size: 2vw !important;
+    }
+    
+    .Subcription >p{
+        width: 45% !important;
+        font-size: 1.3em !important;
+    }
+    
+    .search{
+        font-size: 1.3em !important;
+        width: 60% !important;
+        border-radius: 0.3em;
+    }
+    
+    .Pop-up {
+        width: 80% !important;
+        padding: 6vw;
+        font-size: 4vw !important;
+    }
+    
+
+    /*footer*/
+    footer {
+        font-size: 2vw !important;
+    }
+    
+    .Footer_content{
+        padding-top: 0em !important;
+    }
+    .Conclusion_left{
+        color: black;
+        width: 60%;
+        font-size: 1em !important;
+    }
+    .Conclusion_right{
+        width: 30%;
+        
+    }
+
+    
+    .Conclusion_right > div{
+        margin-left: 10%;
+    }
+    .Conclusion_right > div > img{
+        width: 100%;
+    }
+    
+    .Conclusion_right> ul > li{
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+    .Conclusion_right> ul{
+       margin-top: 2em !important;
+       display: flex;
+       justify-content: center;
+    }
+    
+    
+    .Superlink{
+        display: none !important
+    }
+    /*dòng cuối trang*/
+    footer>a>p {
+        font-size: 1em !important;
+    }
+
+    
+}

@@ -1,0 +1,180 @@
+@media only screen and (max-width: 600px) {  
+  /*--------------SEC 2 ----------------*/
+    .sec2{
+        padding-top: 9% !important;
+        padding-bottom: 9% !important;
+        font-size: 1.8vw !important;
+    }
+    .sec2 > p{
+        font-size: 1.4em !important;
+    }
+    
+    .sec2 h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2em !important;
+        margin: 0;
+    }
+    
+    
+    
+    /*---- Section 3 ----*/
+    .sec3{
+        background-color: black;
+        font-size: 1.6vw !important;
+    }
+    
+    .Menu_List > .Book > .Book_header > a{
+        font-size: 1.6em !important;
+    }
+
+    /*-------- SEC 3 ------------*/
+    .sec3_header{
+        position: relative;
+        font-size: 1.6vw !important;
+    }
+
+    
+    
+    /*------------- Author Section ------------- */
+    .Author_Container{
+        font-size: 1.6vw !important;
+    }
+    
+   
+    /*footer*/
+    footer {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        font-size: 1vw;
+    }
+    
+    .Footer_content{
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    .Conclusion{
+        display: flex;
+        justify-content: center;
+    }
+    .Conclusion_left{
+        color: black;
+        width: 60%;
+    }
+    .Conclusion_right{
+        width: 30%;
+    }
+    .Link > h3 {
+        color: rgb(0, 34, 255);
+        border-bottom: 2px solid rgb(0, 34, 255);
+        text-align: center;
+    }
+    
+    
+    .Conclusion_right > div{
+        margin-left: 10%;
+    }
+    .Conclusion_right > div > img{
+        width: 100%;
+    }
+    
+    .Conclusion_right> ul > li{
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+    .Conclusion_right> ul{
+       margin-top: 0.1em;
+       display: flex;
+       justify-content: center;
+    }
+    
+    
+    .Superlink{
+        display: flex;
+        margin-bottom: 2em;
+    }
+    .Superlink > .Link{
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .Superlink > .Link > h3{
+        padding: 0;
+       margin: 0 0 1.2em 0;
+    }
+    .Superlink > .Link > ul > li{
+        padding: 0;
+        margin: 0 0 1.2em 0;
+    }
+    /*dòng cuối trang*/
+    footer>a>p {
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 5px;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    
+    .Link >ul >li > a:hover{
+        color:#004cfe;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .Conclusion_right > ul > li > a > i:hover{
+        color:#004cfe;
+        transition: 0.3s ease-in-out;
+    }
+
+
+
+
+
+
+
+    
+    /*footer*/
+    footer {
+        font-size: 2vw !important;
+    }
+    
+    .Footer_content{
+        padding-top: 0em !important;
+    }
+    .Conclusion_left{
+        color: black;
+        width: 60%;
+        font-size: 1em !important;
+    }
+    .Conclusion_right{
+        width: 30%;
+        
+    }
+
+    
+    .Conclusion_right > div{
+        margin-left: 10%;
+    }
+    .Conclusion_right > div > img{
+        width: 100%;
+    }
+    
+    .Conclusion_right> ul > li{
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+    .Conclusion_right> ul{
+       margin-top: 2em !important;
+       display: flex;
+       justify-content: center;
+    }
+    
+    
+    .Superlink{
+        display: none !important
+    }
+    /*dòng cuối trang*/
+    footer>a>p {
+        font-size: 1em !important;
+    }
+}
+
